@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/searchFragment">
+    <fragment
+        android:id="@+id/alcoholicFragment"
+        android:name="br.com.iesb.drinkme.view.fragments.AlcoholicFragment"
+        android:label="Alcoholic"
+        tools:layout="@layout/fragment_alcoholic" >
+        <action
+            android:id="@+id/action_alcoholicFragment_to_drinkDetailsFrament"
+            app:destination="@id/drinkDetailsFrament" />
+    </fragment>
+    <fragment
+        android:id="@+id/nonAlcoholicFragment"
+        android:name="br.com.iesb.drinkme.view.fragments.NonAlcoholicFragment"
+        android:label="Non alcoholic"
+        tools:layout="@layout/fragment_non_alcoholic" >
+        <action
+            android:id="@+id/action_nonAlcoholicFragment_to_drinkDetailsFrament"
+            app:destination="@id/drinkDetailsFrament" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="br.com.iesb.drinkme.view.fragments.FavoritesFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favoritesFragment_to_drinkDetailsFrament"
+            app:destination="@id/drinkDetailsFrament" />
+    </fragment>
+    <fragment
+        android:id="@+id/drinkDetailsFrament"
+        android:name="br.com.iesb.drinkme.view.fragments.DrinkDetailsFrament"
+        android:label="Drink Recipe"
+        tools:layout="@layout/fragment_drink_details_frament">
+        <argument
+            android:name="drinkId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="br.com.iesb.drinkme.view.fragments.SearchDrinkFragment"
+        android:label="Search a drink"
+        tools:layout="@layout/fragment_search_drink">
+        <action
+            android:id="@+id/action_searchDrinkFragment_to_drinkDetailsFrament"
+            app:destination="@id/drinkDetailsFrament" />
+    </fragment>
+</navigation>

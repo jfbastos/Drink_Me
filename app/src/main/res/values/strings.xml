@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Drink Me</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="empty_favorites">There is no drinks here. Yet...</string>
+    <string name="instructions_text">Instructions</string>
+    <string name="ingredients_text">Ingredients</string>
+    <string name="search_hint">Drink name</string>
+    <string name="search_menu_text">Search</string>
+    <string name="alcoholic_menu_text">Alcoholic</string>
+    <string name="non_alcoholic_menu_text">Non alcoholic</string>
+    <string name="favorite_menu_text">Favorite</string>
+</resources>
