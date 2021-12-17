@@ -7,7 +7,7 @@ Desafio FOTON
 ## Sobre
 Drink Me é um app que irá auxiliar a escolher o drink perfeito, alcoólico ou não naquele dia de sede.
 
-## Técnologias utilizadas
+## Tecnologias utilizadas
 
 - Arquitetura MVVM
 - Single Activity utilizando Fregments para controle de navegação e UI
